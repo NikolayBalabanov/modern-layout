@@ -43,9 +43,9 @@ const Header = () => {
         <nav
           className={`${
             openNavigation ? "flex" : "hidden"
-          } fixed top-[4rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex h-full overflow-hidden lg:mx-auto lg:bg-transparent`}
+          } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex max-h-screen overflow-hidden lg:mx-auto lg:bg-transparent`}
         >
-          <div className="relative z-2 flex flex-col items-center  m-auto overflow-auto h-full w-full lg:flex-row">
+          <div className="relative z-2 flex flex-col items-center  m-auto h-full w-full max-lg:overflow-y-auto lg:flex-row">
             {navigation.map((item) => (
               <a
                 key={item.id}
