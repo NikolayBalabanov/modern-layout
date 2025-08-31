@@ -8,7 +8,14 @@ const Notification = ({ className, title }) => {
         className || ""
       } flex items-center p-4 pr-6 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl gap-5`}
     >
-      <img src={notification1} width={62} height={62} alt="image" className="rounded-xl" />
+      <img
+        loading="lazy"
+        src={notification1}
+        width={62}
+        height={62}
+        alt="image"
+        className="rounded-xl"
+      />
 
       <div className="flex-1">
         <h6 className="mb-1 font-semibold text-base">{title}</h6>
@@ -20,7 +27,14 @@ const Notification = ({ className, title }) => {
                 key={index}
                 className="flex w-6 h-6 border-2 border-n-12 rounded-full overflow-hidden"
               >
-                <img src={item} className="w-full" width={20} height={20} alt={item} />
+                <img
+                  loading="lazy"
+                  src={item}
+                  className="w-full"
+                  width={20}
+                  height={20}
+                  alt={item}
+                />
               </li>
             ))}
           </ul>

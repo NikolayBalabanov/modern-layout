@@ -17,17 +17,18 @@ const Roadmap = () => (
 
           return (
             <div
-              className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] ${
+              className={`md:flex even:md:translate-y-[7rem] p-0.25  rounded-[2.5rem] ${
                 item.colorful ? "bg-conic-gradient" : "bg-n-6"
               }`}
               key={item.id}
             >
-              <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
-                <div className="absolute top-0 left-0 max-w-full">
+              <div className="relative p-8 bg-n-8 rounded-[2.45rem] overflow-hidden xl:p-15">
+                <div className="absolute top-0 left-0 right-0 max-w-full">
                   <img
+                    loading="lazy"
                     className="w-full"
                     src={grid}
-                    width={550}
+                    width={549}
                     height={550}
                     alt="Grid"
                   />
@@ -38,6 +39,7 @@ const Roadmap = () => (
 
                     <div className="flex items-center px-4 py-1 bg-n-1 rounded text-n-8">
                       <img
+                        loading="lazy"
                         className="mr-2.5"
                         src={item.status === "done" ? check2 : loading1}
                         width={16}
@@ -50,6 +52,7 @@ const Roadmap = () => (
 
                   <div className="mb-10 -my-10 -mx-15">
                     <img
+                      loading="lazy"
                       className="w-full"
                       src={item.imageUrl}
                       width={628}
